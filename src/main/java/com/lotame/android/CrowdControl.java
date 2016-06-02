@@ -136,8 +136,8 @@ public class CrowdControl {
     private static int CONNECTION_TIMEOUT = 5 * 1000;//5 seconds
 
     private Random random = new Random();
-    final private LinkedList<AtomParameter> queue = new LinkedList<>();
-    final private Map<String, String> headerParams = new HashMap<>();
+    final private LinkedList<AtomParameter> queue = new LinkedList<AtomParameter>();
+    final private Map<String, String> headerParams = new HashMap<String, String>();
     private boolean placementsIncluded = false;
     private boolean sessionTransmitted = false;
     private Context context;
